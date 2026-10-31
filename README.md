@@ -141,19 +141,3 @@ To record the required walkthrough video for your submission, an interactive run
 # Launch interactive visual walkthrough with paced step-by-step progress
 python demo_walkthrough.py
 ```
-
-### Recommended Video Script (2-3 Minutes):
-1. **Introduction (15 sec)**:
-   - Introduce yourself and mention the project: SauceDemo UI Automation using Python, Selenium, and Pytest with the Page Object Model.
-2. **Project Structure (20 sec)**:
-   - Briefly show the project folder: `pages/` (POM), `tests/` (test suites), `data/` (JSON test data), `conftest.py` (fixtures & screenshots), and `reports/`.
-3. **Execution (45 sec)**:
-   - Run `python demo_walkthrough.py` (or `pytest --headed`) to show the browser executing all 5 flows live:
-     - Negative login for `locked_out_user` & wrong password.
-     - Happy path login for `standard_user` landing on Products.
-     - Adding 2 products, checking badge count = 2, and verifying names & prices in cart.
-     - Submitting checkout with empty first name and seeing validation error.
-     - Entering customer info, checking `Total = Item total + Tax`, and completing the order.
-4. **HTML Report & Failure Screenshot (30 sec)**:
-   - Open `reports/report.html` in Chrome to show the 14 passing test cases, execution timing, and clean report layout.
-   - Mention that failures automatically capture timestamped screenshots in `reports/screenshots/` and embed them into the HTML report.
