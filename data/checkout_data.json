@@ -1,0 +1,25 @@
+{
+  "valid_checkout": {
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "postal_code": "90210"
+  },
+  "empty_first_name": {
+    "first_name": "",
+    "last_name": "Doe",
+    "postal_code": "90210",
+    "expected_error": "Error: First Name is required"
+  },
+  "empty_last_name": {
+    "first_name": "Jane",
+    "last_name": "",
+    "postal_code": "90210",
+    "expected_error": "Error: Last Name is required"
+  },
+  "empty_postal_code": {
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "postal_code": "",
+    "expected_error": "Error: Postal Code is required"
+  }
+}

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Pytest & Reports
+.pytest_cache/
+reports/*.html
+reports/screenshots/*.png
+!reports/screenshots/.gitkeep
+
+# Node (if any)
+node_modules/
